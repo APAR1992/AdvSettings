@@ -29,15 +29,15 @@ public class AdvUtils {
 
     public static void reboot(int mode) {
     	switch (mode) {
-            case 0:
-                runCmd("reboot -p");
-                break;
-    		case 1:
-    			runCmd("busybox killall system_server");
-    			break;
-    		case 2:
-    			runCmd("reboot recovery");
-    			break;
+		case 0:
+			runCmd("reboot -p");
+			break;
+		case 1:
+			runCmd("busybox killall system_server");
+			break;
+		case 2:
+			runCmd("reboot recovery");
+			break;
     	}
     }
 }
